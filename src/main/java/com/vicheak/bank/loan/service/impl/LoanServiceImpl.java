@@ -24,5 +24,10 @@ public class LoanServiceImpl implements LoanService {
 	public List<Loan> getList() {
 		return loanRepository.findAll(); 
 	}
+
+	@Override
+	public List<Loan> getByCustomerId(Long customerId) {
+		return loanRepository.findByCustomerId(customerId); 
+	}
 	
 }

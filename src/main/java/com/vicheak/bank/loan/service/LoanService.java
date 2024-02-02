@@ -10,4 +10,6 @@ public interface LoanService {
 	
 	List<Loan> getList();
 	
+	List<Loan> getByCustomerId(Long customerId); 
+	
 }
